@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class Main {
     public static long calculateElectricityBill(int kWh) {
+        if(kWh < 0 || kWh > 5000) return -1;
         long bill = 0;
-
         if (kWh <= 50) {
             bill = kWh * 1678;
         } else if (kWh <= 200) {

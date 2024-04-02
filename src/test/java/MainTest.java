@@ -14,5 +14,8 @@ class MainTest {
         assertEquals(669400, Main.calculateElectricityBill(300));
         // Test case for kWh over 400
         assertEquals(1245500, Main.calculateElectricityBill(500));
+
+        assertEquals(-1, Main.calculateElectricityBill(-1));
+        assertEquals(-1, Main.calculateElectricityBill(5001));
     }
 }
